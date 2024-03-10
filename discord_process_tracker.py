@@ -65,6 +65,7 @@ async def on_ready():
         f = open("config.txt", "r")
         lines = f.readlines()
         f.close()
+        config_array.clear()
         for line in lines:
             s = line.strip()
             a = s.split(",")
