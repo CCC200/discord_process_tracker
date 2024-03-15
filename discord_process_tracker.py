@@ -34,7 +34,7 @@ def check_configs():
         else:
             build_string += ":red_circle: "
         build_string += data[0] + "\n"
-    build_string += "\n `Updated " + str(datetime.now()) + "`"
+    build_string += "\n `Updated " + str(datetime.now()).split(".")[0] + "`"
     return build_string
 
 async def run_cycle():
